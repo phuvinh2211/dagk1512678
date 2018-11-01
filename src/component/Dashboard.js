@@ -6,9 +6,8 @@ class Dashboard extends Component {
     
     return (
       <div >
-        
-        <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
         <div className="container clearfix">
+        <button type="button" class="btn btn-primary" onClick={() => firebase.auth().signOut()}>Sign Out</button>
         <div className="people-list" id="people-list">
           <div className="search">
             <input type="text" placeholder="search" />

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Dashboard from './component/Dashboard'
+import Header from './component/Header'
 import firebase from 'firebase'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 
