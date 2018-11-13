@@ -4,10 +4,17 @@ import Dashboard from './component/Dashboard'
 import firebase from 'firebase'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 
-firebase.initializeApp({
+
+
+var config = {
   apiKey: "AIzaSyAvXjeUN_6dXHv0dRGMthal82ASiKqmWSQ",
-  authDomain: "dagk-firebase.firebaseapp.com"
-})
+  authDomain: "dagk-firebase.firebaseapp.com",
+  databaseURL: "https://dagk-firebase.firebaseio.com",
+  projectId: "dagk-firebase",
+  storageBucket: "dagk-firebase.appspot.com",
+  messagingSenderId: "87523582163"
+};
+firebase.initializeApp(config);
 class App extends Component {
   state = {SignIn : false}
   uiConfig = {
